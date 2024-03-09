@@ -79,6 +79,8 @@ async function getPageProperties(
       }
     }
   }
+
+  console.log(properties)
   return properties
 }
 

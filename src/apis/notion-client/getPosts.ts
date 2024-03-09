@@ -35,7 +35,9 @@ export const getPosts = async () => {
       properties.fullWidth =
         (block[id].value?.format as any)?.page_full_width ?? false
 
-      data.push(properties)
+      if (properties?.post === "Published") {
+        data.push(properties)
+      }
     }
 
     data.sort((a: any, b: any) => {
