@@ -44,19 +44,16 @@ export const Global = () => {
           padding: 0;
         }
 
-        // init button
         button {
           all: unset;
           cursor: pointer;
         }
 
-        // init input
         input {
           all: unset;
           box-sizing: border-box;
         }
 
-        // init textarea
         textarea {
           border: none;
           background-color: transparent;

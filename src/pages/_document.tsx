@@ -18,7 +18,6 @@ class MyDocument extends Document {
             title="RSS 2.0"
             href="/feed"
           ></link>
-          {/* google search console */}
           {CONFIG.googleSearchConsole.enable === true && (
             <>
               <meta
@@ -27,7 +26,6 @@ class MyDocument extends Document {
               />
             </>
           )}
-          {/* naver search advisor */}
           {CONFIG.naverSearchAdvisor.enable === true && (
             <>
               <meta

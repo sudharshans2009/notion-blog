@@ -20,28 +20,24 @@ const PostList: React.FC<Props> = ({ q }) => {
   useEffect(() => {
     setFilteredPosts(() => {
       let newFilteredPosts = data
-      // keyword
       newFilteredPosts = newFilteredPosts.filter((post) => {
         const tagContent = post.tags ? post.tags.join(" ") : ""
         const searchContent = post.title + post.summary + tagContent
         return searchContent.toLowerCase().includes(q.toLowerCase())
       })
 
-      // tag
       if (currentTag) {
         newFilteredPosts = newFilteredPosts.filter(
           (post) => post && post.tags && post.tags.includes(currentTag)
         )
       }
 
-      // category
       if (currentCategory !== DEFAULT_CATEGORY) {
         newFilteredPosts = newFilteredPosts.filter(
           (post) =>
             post && post.category && post.category.includes(currentCategory)
         )
       }
-      // order
       if (currentOrder !== "desc") {
         newFilteredPosts = newFilteredPosts.reverse()
       }

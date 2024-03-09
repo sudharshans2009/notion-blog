@@ -12,7 +12,6 @@ const TagList: React.FC<Props> = () => {
   const data = useTagsQuery()
 
   const handleClickTag = (value: any) => {
-    // delete
     if (currentTag === value) {
       router.push({
         query: {
@@ -21,7 +20,6 @@ const TagList: React.FC<Props> = () => {
         },
       })
     }
-    // add
     else {
       router.push({
         query: {

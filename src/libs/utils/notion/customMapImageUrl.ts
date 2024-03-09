@@ -9,7 +9,6 @@ export const customMapImageUrl = (url: string, block: Block): string => {
     return url
   }
 
-  // more recent versions of notion don't proxy unsplash images
   if (url.startsWith('https://images.unsplash.com')) {
     return url
   }
@@ -26,12 +25,11 @@ export const customMapImageUrl = (url: string, block: Block): string => {
         u.searchParams.has('X-Amz-Signature') &&
         u.searchParams.has('X-Amz-Algorithm')
       ) {
-        // if the URL is already signed, then use it as-is
         url = u.origin + u.pathname
       }
     }
   } catch {
-    // ignore invalid urls
+    
   }
 
   if (url.startsWith('/images')) {
