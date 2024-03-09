@@ -37,3 +37,7 @@ yarn-error.log*
 # public/sitemap.xml
 
 /.firebase
+
+# replit
+.breakpoints
+.replit
