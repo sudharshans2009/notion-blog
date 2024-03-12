@@ -1,0 +1,15 @@
+{
+  "name": "The Madlad Blog",
+  "short_name": "The Madlad Blog",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "The Madlad Blog - The Notion powered blog made my @notionmadlad",
+  "icons": [
+    {
+      "src": "madlad.jpg",
+      "sizes": "400x400",
+      "type": "image/jpg"
+    }
+  ]
+}
