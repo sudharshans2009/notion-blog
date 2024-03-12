@@ -1,27 +1,28 @@
 const CONFIG = {
   profile: {
-    name: "Sudharshan S",
+    name: "Martin Notion",
     image: "/madlad.jpg",
-    role: "Student",
-    bio: "Just another programmer.",
-    email: "sudharshans2009@gmail.com",
-    linkedin: "",
-    github: "sudharshans2009",
+    role: "Notion Creator",
+    bio: "Get your life and business on track with my tips and Notion Templates.",
+    email: "martin.nicolai.online@gmail.com",
+    linkedin: "martinwriter1",
+    github: "",
     instagram: "",
+    twitter: "notionmadlad"
   },
   projects: [
     {
-      name: `Notion Blog`,
-      href: "https://github.com/sudharshans2009/notion-blog",
+      name: `Leads Hub - Product Hunt`,
+      href: "https://www.producthunt.com/products/leads-hub",
     },
   ],
   blog: {
-    title: "Sudharshan's Blog",
-    description: "Welcome to my Blog!",
+    title: "The Madlad Blog",
+    description: "The Madlad Blog - The Notion powered blog made my @notionmadlad",
   },
 
-  link: "https://sudharshans2009.vercel.app",
-  since: 2024,
+  link: "https://blog.madlad.store",
+  since: 2023,
   lang: "en-US",
   ogImageGenerateURL: "https://og-image-korean.vercel.app",
   notionConfig: {

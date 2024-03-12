@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai"
+import { RiTwitterXLine } from "react-icons/ri"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -13,9 +14,19 @@ const ContactCard: React.FC = () => {
   return (
     <>
       <StyledTitle>
-        <Emoji>💬</Emoji> Contact
+        Contact
       </StyledTitle>
       <StyledWrapper>
+        {CONFIG.profile.twitter && (
+          <a
+            href={`https://twitter.com/${CONFIG.profile.twitter}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <RiTwitterXLine className="icon" />
+            <div className="name">twitter</div>
+          </a>
+        )}
         {CONFIG.profile.github && (
           <a
             href={`https://github.com/${CONFIG.profile.github}`}
