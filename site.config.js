@@ -10,6 +10,18 @@ const CONFIG = {
     instagram: "martinwriter_",
     twitter: "notionmadlad"
   },
+  links: [
+    { 
+      id: 1, 
+      name: "About", 
+      to: "/about" 
+    },
+    {
+      id: 2,
+      name: "Store",
+      to: "/store"
+    }
+  ],
   projects: [
     {
       name: `Leads Hub - Product Hunt`,
